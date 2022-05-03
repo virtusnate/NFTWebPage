@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Horizon Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <body>
+    
+    <nav id="barra">
+      <img class="logo" src="logo.png">
+      <a href="index.html"><p>Explora</p></a>
+      <a href="store.html"><p>Mercado</p></a>
+      <a href="shop.html"><p>Aprende</p></a>
+      <a href="shop.html"><p>Nosotros</p></a>
+      <div id="profile">
+          <a class="profile" id="izquierda" href="shop.html"><p>Mi Perfil</p></a>
+          <div class="separator"></div>
+          <a class="profile" href="login.html"><p>Sign Up</p></a>
+          <a class="profile" href="login.html"><p>Log In</p></a>
+      </div>
+  </nav>
+
+<body>
+    <br>
+    <div align="center"><img src="foto.jpg" width="200" height="250"></div>
+    <br>
+    <div align="center"><h5>Iniciar Sesión</h5></div>
+    <div align="center" class="container">
+      <div class="justify-content-center col-sm-6 align-items-center ">
+
+        <form style="border:0px;padding:5rem" name="login">
+          <div class="form-group">
+            <label for="Correo">Correo electrónico</label>
+            <input name="usuario" type="text" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="Contraseña">Contraseña</label>
+            <input name="password" type="password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <div align="center"><button type="button" class="btn btn-primary" onclick="Login()">Ingresar</button></div>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+
+    <script language="JavaScript"> 
+function Login(){ 
+var done=0; 
+var usuario=document.login.usuario.value; 
+var password=document.login.password.value; 
+if (usuario=="diego@san.mx" && password=="diego123") { 
+window.location="admin.html"; 
+} else if (usuario=="ximena@san.mx" && password=="ximena123") { 
+    window.location="admin.html"; 
+    } else if (usuario=="ortega@san.mx" && password=="ortega123") { 
+        window.location="admin.html"; 
+        } else if (usuario=="hector@san.mx" && password=="hector123") { 
+            window.location="admin.html"; 
+            } else if (usuario=="paulo@san.mx" && password=="paulo123") { 
+                window.location="admin.html"; 
+                }
+        else{ 
+          swal("Oops!", "Por favor ingrese, nombre de usuario y contraseña correctos!", "error");
+        }
+      }
+
+        </script> 
+        </center> 
+<script language="Javascript"> 
+<!-- Begin 
+document.oncontextmenu = function(){return false} 
+// End --> 
+</script>
+    
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="row pt-md-3 element-animate">
+          <div class="col-md-12">
+            <hr class="border-t">
+          </div>
+          <div class="col-md-6 col-sm-12 copyright">
+            <p>2022 Horizon NFT.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </footer>
+    <!-- END footer -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
