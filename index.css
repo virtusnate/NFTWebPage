@@ -1,0 +1,745 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration:none;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+.area{
+    background: #34388C;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #34388C); 
+    width: 100%;
+    height: 107.5vh;                                                         /* El tamaño del fondo */
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;                                                          /*El tamaño del contenedor */
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: 0;                                                             /*De aqui inician las animaciones*/
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;                              /*La posicion horizontal*/  
+    width: 150px;                           /*tamaño*/
+    height: 150px;                          
+    animation-delay: 0s;                    /*tiempo en salir*/    
+    animation-duration: 11s;                /*duracion de la animacion*/
+}
+
+/*Aqui va la otra seccion*/
+
+.circles2{
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;                                                          /*El tamaño del contenedor */
+    overflow: hidden;
+}
+
+.circles2 li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;                                 /*De aqui inician las animaciones*/
+    
+}
+
+.circles2 li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles2 li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles2 li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles2 li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles2 li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles2 li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles2 li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles2 li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles2 li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles2 li:nth-child(10){
+    left: 85%;                              /*La posicion horizontal*/  
+    width: 150px;                           /*tamaño*/
+    height: 150px;                          
+    animation-delay: 0s;                    /*tiempo en salir*/    
+    animation-duration: 11s;                /*duracion de la animacion*/
+}
+
+/*Aqui inicia el nav */
+
+        a{
+            text-decoration:none;
+        }
+
+        #barra{                                     /*la barra de navegacion*/
+            width:100vw;
+            height:5vh;
+            position: fixed;
+            top:0px;
+            left:0px;
+            background-color:rgba(0, 0, 0, 0.9);
+            z-index:10;
+            display:flex;
+            align-items:center;
+            flex-wrap:nowrap;
+            z-index:30;
+        }
+
+        #barra > a {                                   /*elementos dentro de la barra*/
+        text-align:center;
+        color: rgba(255, 255, 255, 0.8);
+        margin-left:1.5vw;
+        margin-right:1.5vw;
+        font-weight:600;
+        }
+
+        #barra > a:hover {
+            color:#fff;
+        }
+
+        .logo{
+            width:4vh;
+            height:4vh;
+            margin-right:2vw;
+            margin-left:2vw;
+        }
+
+        #profile{                                   /*elementos al final de la barra*/
+            width:100vw;
+            height:100%;
+            display:flex;
+            flex-direction:row-reverse;
+            align-items:center;
+        }
+
+        .profile{
+            margin-right:1vw;
+            margin-left:1vw;
+            color:rgba(255, 255, 255, 0.8);
+            font-weight:600;
+        }
+
+        .profile:hover{
+            color:#fff;
+        }
+        
+        .separator{
+            width: 1px;
+            height: 28px;
+            margin-left:1vw;
+            margin-right:1vw;
+            background-color: #fff;
+        }
+
+        #izquierda{
+            margin-right:2vw;
+        }
+
+        /*Aqui inicia la pagina*/
+
+        #nft-title{                                                        /*Contenedor del titulo nft*/
+            position:absolute;
+            top:15.5vh;
+            right:17vw;
+            width:34vw;
+            height:55vh;
+            background-color:rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            border-radius:15px;
+            z-index:9;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        #nft-title img{
+            position:relative;
+            top:0px;
+            width:100%;
+            height:85%;
+            z-index:3
+        }
+
+        #nft-title-f{
+            position:relative;
+            background-color:rgba(255, 255, 255, 0.2);              /*Color transparente*/
+            height:15%;
+            width:100%;
+            bottom:0.8%;
+            z-index:2;
+            display:flex;
+            align-items:center;
+        }
+
+        #nft-title-f img{
+            width:10%;
+            height:80%;
+            border-radius:100%;
+            margin-left:3%;
+            margin-right:3%;
+        }
+
+        /*#title-f img:hover{
+            
+        }*/
+
+        .flex-p{                                            
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            align-content:space-around;
+        }
+
+        .flex-p p{
+            margin-top:4%;
+            margin-bottom: 4%;
+            color:rgba(255, 255, 255, 0.8);
+            font-weight:600;
+        }
+
+        .flex-p p:hover{
+            margin-top:4%;
+            margin-bottom: 4%;
+            color:rgba(255, 255, 255);
+        }
+
+        /*Aqui acaba el contenedor de nft */
+
+        .t-title {                                      /*Texto principal*/
+            width:32vw;
+            position: absolute;
+            text-align:left;
+            display:inline-block;
+            top:30vh;
+            left:17vw;
+            font-size: 4vh;
+            color:#fff;          
+        }
+        
+        .t-subtitle {                                   /*Subtitulo Principal*/
+            width:24vw;
+            position: absolute;
+            display:inline-block;
+            top:42vh;
+            left:17.2vw;    
+            font-size:1.8vh;   
+            font-weight:800;  
+            color:rgba(255, 255, 255, 0.6); 
+        }
+        
+        /*Aqui acaba el texto de la portada */
+
+        .c-button{
+            width: 18vw;
+            height:5vh;
+            display:grid;
+            grid-template-columns:50% 50%;
+            grid-template-rows:100%;
+            grid-gap:2vh;
+            position:absolute;
+            top:49vh;
+            left:17vw;
+        }
+
+        .c-button-son{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-radius:15px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .c-button-son p{
+            color: rgba(255,255,255,0.9);
+            font-weight:800;
+            font-size:1vw;
+            z-index:10;
+        }
+ 
+        .c-button-son p:hover{
+            font-size:1.2vw;
+            color:#fff;
+        }
+
+        /*Aqui acaba la portada*/
+
+        /*Aqui inicia la segunda parte */
+
+        #b-container{                                                           /*Contenedor del boton gigante*/
+            width:65.1vw;
+            height:11vh;
+            background-image:url("imagenes/fondos/boton.jpg");
+            background-position:20% 50%;
+            border-radius:15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display:grid;
+            grid-template-rows:100%,;
+            grid-template-columns:60% 40%;
+            position:absolute;
+            right:17vw;
+            top: 80vh;
+            overflow:hidden;
+            z-index:9;
+        }
+
+        #b-container p{                                                        /*Titulo del contenedor*/
+            margin-left:5vw;
+            font-size: 1.8vw;
+            font-weight:800;
+            color: #000000;
+        }
+
+        .m-button{                                                             /*Contenedor del subboton*/
+            width:25%;  
+            height:40%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:relative;
+            margin-left:15vw;
+            border-radius:15px;
+            background-color: #34388C;
+        }
+
+        .m-button a{                                                            /*Letra del subboton*/
+            color: rgba(255,255,255,0.9);
+            font-weight:800;
+            font-size:1vw;
+        }
+ 
+        .button-son a:hover{
+            color:#fff;
+            font-size: 1.2vw;
+}
+
+        .button-son{
+            display:flex;
+            align-items:center;
+        }
+
+        /*Aqui acaba el boton gigante*/
+
+        /*Inicia la seccion de la comunidad*/
+
+        .t-community{
+            width:32vw;
+            position: absolute;
+            text-align:left;
+            display:inline-block;
+            top:105vh;
+            left:17vw;
+            font-size: 4vh;
+            color:#fff;  
+        }
+
+        #c-community{
+            position:absolute;                                          /*Es el contenedor de la comunidad*/
+            width:65vw;
+            height:25vh;
+            top:112vh;
+            left:17vw;
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap:0.5vw;
+        }
+
+        .community-son{                                                /*Es cada usuario*/
+            background-color:rgba(255, 255, 255, 0.2);
+            display:flex;
+            justify-content:flex-start;
+            align-items:center;
+            overflow:hidden;
+            border-radius:15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .community-son p{
+            margin-right:5%;
+            margin-left:5%;
+            font-size:2vh;
+            font-weight:600;
+        }
+
+        .community-son img{
+            border-radius:100%;
+            height:90%;
+            width:20%;
+            margin-right:10%;
+        }
+
+        .community-son a{
+            color:rgba(255,255,255,0.8);
+            font-size:2vh;
+            font-weight:600;
+            z-index:10;
+        }
+
+        .community-son a:hover{
+            font-size:2.2vh;
+            color:#fff;
+        }
+
+        /*Primera tienda*/
+
+        .t-shop{
+            width:32vw;
+            position: absolute;
+            text-align:left;
+            display:inline-block;
+            top:151vh;
+            left:17vw;
+            font-size: 4vh;
+            color:#fff;  
+        }
+        
+        #s-container{                                                   /*Contenedor de la tienda*/
+            position:absolute;
+            top:158vh;
+            left:17vw;
+            width:65vw;
+            height:25vh;
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows:100%;
+            grid-gap:0.5vw;
+        }
+
+        .nft-shop{                                                      /*Contenedor del titulo nft*/
+            overflow: hidden;
+            border-radius:15px;
+            z-index:9;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .nft-shop img{
+            position:relative;
+            top:0px;
+            width:100%;
+            height:85%;
+            z-index:4
+        }
+
+        .nft-shop-f{
+            position:relative;
+            background-color:rgba(255, 255, 255, 0.2);              /*Color transparente*/
+            height:15%;
+            width:100%;
+            bottom:0.8%;
+            z-index:2;
+            display:grid;
+            grid-template-columns:35% 65%;
+            grid-template-rows: 100%;
+        }
+
+        .nft-shop-f img{
+            width:50%;
+            height:80%;
+            margin-left:10%;
+            border-radius:100%;
+        }
+
+        /*#title-f img:hover{
+            
+        }*/
+
+        .nft-shop-img{
+            display:flex;
+            align-items:center;
+            justify-content:left;
+        }
+
+        .flex-s{                                            
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            align-content:center;
+            justify-content:center;
+        }
+
+        .flex-s p{
+            margin-top:4%;
+            margin-bottom: 4%;
+            color:rgba(255, 255, 255, 0.8);
+            font-weight:600;
+        }
+
+        .flex-s p:hover{
+            margin-top:4%;
+            margin-bottom: 4%;
+            color:rgba(255, 255, 255);
+        }
+
+        /*para imagenes de 1920x1080*/
+
+        /*footer*/
+
+        #c-footer{                                                                     /*Contenedor del footer*/
+            position:absolute;
+            top:197.5vh;
+            right:17vw;
+            width:65vw;
+            height:17vh;
+            display:grid;
+            grid-template-columns:3fr 2fr 2fr;
+            grid-template-rows:100%;
+            background-image:url("imagenes/fondos/boton.jpg");
+            background-position:20% 50%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .c-footer-son{
+            display:flex;
+            flex-direction:column;
+            align-content:center;
+            justify-content:flex-start;
+            align-items:flex-start;
+        }
+
+        .c-footer-son p{
+            font-size:17px;
+            color:rgb(0,0,0);
+            font-weight:1000;
+            margin-top:7%;
+            margin-bottom:3%;
+            margin-left:15%;
+            letter-spacing: 1px;
+        }
+
+        .c-footer-son a{
+            font-size:13px;
+            color: rgba(0,0,0);
+            margin-left:15.2%;
+            margin-top:2.5%;
+            font-weight:800;
+            letter-spacing: 1px;
+        }
+
+        .c-footer-son-h{
+            position:relative;
+            height:100%;
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-start;
+            align-items:center;
+        }
+
+        .c-footer-son-h img{
+            height:50%;
+            width:auto;
+            border-radius:100%;
+            align-self:flex-start;
+            margin-left:6%;
+            margin-top:1.5%;
+        }
+
+        .c-footer-son-h p{
+            width:74%;
+            margin-top:1%;
+            margin-bottom:0%;
+            margin-right:0;
+            height:auto;
+            font-size:13.6px;
+            font-weight:600px;
+            align-self: flex-start;
+            margin-left:10%;
+            letter-spacing: 1px;
+        }
+
+        /*Boton Raro*/
+
+        .f-button{                                                          /*Se tiene que poner manualmente*/
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-radius:20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            position:absolute;
+            top:200.4vh;
+            left:24vw;
+            width:300px;
+            height:45px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .f-button p{
+            color: rgba(52, 56, 140,0.8);
+            font-weight:1000;
+            font-size:1vw;
+            z-index:10;
+        }
+ 
+        .f-button p:hover{
+            font-size:1.2vw;
+            color:#34388C;
+        }
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }  
+
+}
