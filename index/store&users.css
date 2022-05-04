@@ -1,0 +1,153 @@
+/*Inicia la seccion de la comunidad*/
+
+.t-community{
+    width:32vw;
+    position: absolute;
+    text-align:left;
+    display:inline-block;
+    top:105vh;
+    left:17vw;
+    font-size: 4vh;
+    color:#fff;  
+}
+
+#c-community{
+    position:absolute;                                          /*Es el contenedor de la comunidad*/
+    width:65vw;
+    height:25vh;
+    top:112vh;
+    left:17vw;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:0.5vw;
+}
+
+.community-son{                                                /*Es cada usuario*/
+    background-color:rgba(255, 255, 255, 0.2);
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.community-son p{
+    margin-right:5%;
+    margin-left:5%;
+    font-size:2vh;
+    font-weight:600;
+}
+
+.community-son img{
+    border-radius:100%;
+    height:90%;
+    width:20%;
+    margin-right:10%;
+}
+
+.community-son a{
+    color:rgba(255,255,255,0.8);
+    font-size:2vh;
+    font-weight:600;
+    z-index:10;
+}
+
+.community-son a:hover{
+    font-size:2.2vh;
+    color:#fff;
+}
+
+/*Primera tienda*/
+
+.t-shop{
+    width:32vw;
+    position: absolute;
+    text-align:left;
+    display:inline-block;
+    top:151vh;
+    left:17vw;
+    font-size: 4vh;
+    color:#fff;  
+}
+
+#s-container{                                                   /*Contenedor de la tienda*/
+    position:absolute;
+    top:158vh;
+    left:17vw;
+    width:65vw;
+    height:25vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:100%;
+    grid-gap:0.5vw;
+}
+
+.nft-shop{                                                      /*Contenedor del titulo nft*/
+    overflow: hidden;
+    border-radius:15px;
+    z-index:9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.nft-shop img{
+    position:relative;
+    top:0px;
+    width:100%;
+    height:85%;
+    z-index:4
+}
+
+.nft-shop-f{
+    position:relative;
+    background-color:rgba(255, 255, 255, 0.2);              /*Color transparente*/
+    height:15%;
+    width:100%;
+    bottom:0.8%;
+    z-index:2;
+    display:grid;
+    grid-template-columns:35% 65%;
+    grid-template-rows: 100%;
+}
+
+.nft-shop-f img{
+    width:50%;
+    height:80%;
+    margin-left:10%;
+    border-radius:100%;
+}
+
+/*#title-f img:hover{
+    
+}*/
+
+.nft-shop-img{
+    display:flex;
+    align-items:center;
+    justify-content:left;
+}
+
+.flex-s{                                            
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    align-content:center;
+    justify-content:center;
+}
+
+.flex-s p{
+    margin-top:4%;
+    margin-bottom: 4%;
+    color:rgba(255, 255, 255, 0.8);
+    font-weight:600;
+}
+
+.flex-s p:hover{
+    margin-top:4%;
+    margin-bottom: 4%;
+    color:rgba(255, 255, 255);
+}
+
+/*para imagenes de 1920x1080*/

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+a {
+    text-decoration:none;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+/*Aqui inicia el nav */
+
+        a{
+            text-decoration:none;
+        }
+
+        #barra{                                     /*la barra de navegacion*/
+            width:100vw;
+            height:5vh;
+            position: fixed;
+            top:0px;
+            left:0px;
+            background-color:rgba(0, 0, 0, 0.9);
+            z-index:10;
+            display:flex;
+            align-items:center;
+            flex-wrap:nowrap;
+            z-index:30;
+        }
+
+        #barra > a {                                   /*elementos dentro de la barra*/
+        text-align:center;
+        color: rgba(255, 255, 255, 0.8);
+        margin-left:1.5vw;
+        margin-right:1.5vw;
+        font-weight:600;
+        }
+
+        #barra > a:hover {
+            color:#fff;
+        }
+
+        .logo{
+            width:4vh;
+            height:4vh;
+            margin-right:2vw;
+            margin-left:2vw;
+        }
+
+        #profile{                                   /*elementos al final de la barra*/
+            width:100vw;
+            height:100%;
+            display:flex;
+            flex-direction:row-reverse;
+            align-items:center;
+        }
+
+        .profile{
+            margin-right:1vw;
+            margin-left:1vw;
+            color:rgba(255, 255, 255, 0.8);
+            font-weight:600;
+        }
+
+        .profile:hover{
+            color:#fff;
+        }
+        
+        .separator{
+            width: 1px;
+            height: 28px;
+            margin-left:1vw;
+            margin-right:1vw;
+            background-color: #fff;
+        }
+
+        #izquierda{
+            margin-right:2vw;
+        }
+
+        /*Aqui inicia la pagina*/
+
+        #nft-title{                                                        /*Contenedor del titulo nft*/
+            position:absolute;
+            top:15.5vh;
+            right:17vw;
+            width:34vw;
+            height:55vh;
+            background-color:rgba(255, 255, 255, 0.2);
+            overflow: hidden;
+            border-radius:15px;
+            z-index:9;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        #nft-title img{
+            position:relative;
+            top:0px;
+            width:100%;
+            height:85%;
+            z-index:3
+        }
+
+        #nft-title-f{
+            position:relative;
+            background-color:rgba(255, 255, 255, 0.2);              /*Color transparente*/
+            height:15%;
+            width:100%;
+            bottom:0.8%;
+            z-index:2;
+            display:flex;
+            align-items:center;
+        }
+
+        #nft-title-f img{
+            width:10%;
+            height:80%;
+            border-radius:100%;
+            margin-left:3%;
+            margin-right:3%;
+        }
+
+        /*#title-f img:hover{
+            
+        }*/
+
+        .flex-p{                                            
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            align-content:space-around;
+        }
+
+        .flex-p p{
+            margin-top:4%;
+            margin-bottom: 4%;
+            color:rgba(255, 255, 255, 0.8);
+            font-weight:600;
+        }
+
+        .flex-p p:hover{
+            margin-top:4%;
+            margin-bottom: 4%;
+            color:rgba(255, 255, 255);
+        }
+
+        /*Aqui acaba el contenedor de nft */
+
+        .t-title {                                      /*Texto principal*/
+            width:32vw;
+            position: absolute;
+            text-align:left;
+            display:inline-block;
+            top:30vh;
+            left:17vw;
+            font-size: 4vh;
+            color:#fff;          
+        }
+        
+        .t-subtitle {                                   /*Subtitulo Principal*/
+            width:24vw;
+            position: absolute;
+            display:inline-block;
+            top:42vh;
+            left:17.2vw;    
+            font-size:1.8vh;   
+            font-weight:800;  
+            color:rgba(255, 255, 255, 0.6); 
+        }
+        
+        /*Aqui acaba el texto de la portada */
+
+        .c-button{
+            width: 18vw;
+            height:5vh;
+            display:grid;
+            grid-template-columns:50% 50%;
+            grid-template-rows:100%;
+            grid-gap:2vh;
+            position:absolute;
+            top:49vh;
+            left:17vw;
+        }
+
+        .c-button-son{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-radius:15px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .c-button-son p{
+            color: rgba(255,255,255,0.9);
+            font-weight:800;
+            font-size:1vw;
+            z-index:10;
+        }
+ 
+        .c-button-son p:hover{
+            font-size:1.2vw;
+            color:#fff;
+        }
+
+        /*Aqui acaba la portada*/
+
+        /*Aqui inicia la segunda parte */
+
+        #b-container{                                                           /*Contenedor del boton gigante*/
+            width:65.1vw;
+            height:11vh;
+            background-image:url("../imagenes/fondos/boton.jpg");
+            background-position:20% 50%;
+            border-radius:15px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            display:grid;
+            grid-template-rows:100%,;
+            grid-template-columns:60% 40%;
+            position:absolute;
+            right:17vw;
+            top: 80vh;
+            overflow:hidden;
+            z-index:9;
+        }
+
+        #b-container p{                                                        /*Titulo del contenedor*/
+            margin-left:5vw;
+            font-size: 1.8vw;
+            font-weight:800;
+            color: #000000;
+        }
+
+        .m-button{                                                             /*Contenedor del subboton*/
+            width:25%;  
+            height:40%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            position:relative;
+            margin-left:15vw;
+            border-radius:15px;
+            background-color: #34388C;
+        }
+
+        .m-button a{                                                            /*Letra del subboton*/
+            color: rgba(255,255,255,0.9);
+            font-weight:800;
+            font-size:1vw;
+        }
+ 
+        .button-son a:hover{
+            color:#fff;
+            font-size: 1.2vw;
+}
+
+        .button-son{
+            display:flex;
+            align-items:center;
+        }
+
+        /*Aqui acaba el boton gigante*/
+        

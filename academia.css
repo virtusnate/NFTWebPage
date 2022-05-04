@@ -26,7 +26,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;                                                          /*El tamaño del contenedor */
+    height: 100%;                                                          /*El tamaño del contenedor */
     overflow: hidden;
 }
 
