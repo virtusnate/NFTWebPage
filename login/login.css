@@ -18,8 +18,8 @@ body{
     width:100vw;
     height:3.5vh;
     position: fixed;
-    top:0px;
-    left:0px;
+    top:0vh;
+    left:0vw;
     background-color:rgba(0, 0, 0, 0.9);
     z-index:10;
     display:flex;
