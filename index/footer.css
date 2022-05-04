@@ -1,104 +1,147 @@
-/*footer*/
-
-#c-footer{                                                                     /*Contenedor del footer*/
+footer{                                                         /*Contiene el footer*/
+    width: 100%;
+    background: #202020;
+    color: white;   
     position:absolute;
-    top:197.5vh;
-    right:17vw;
-    width:65vw;
-    height:17vh;
-    display:grid;
-    grid-template-columns:3fr 2fr 2fr;
-    grid-template-rows:100%;
-    background-image:url("../imagenes/fondos/boton.jpg");
-    background-position:20% 50%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    top:197vh;
+    z-index:12;
 }
 
-.c-footer-son{
-    display:flex;
-    flex-direction:column;
-    align-content:center;
-    justify-content:flex-start;
-    align-items:flex-start;
+.container-footer-all{                                          /*Contiene el contenido del footer*/
+    width: 100%;                                        
+    max-width: 1200px;                                          /*Establece el tamaño de este*/
+    margin: auto;
+    padding: 40px;
 }
 
-.c-footer-son p{
-    font-size:17px;
-    color:rgb(0,0,0);
-    font-weight:1000;
-    margin-top:7%;
-    margin-bottom:3%;
-    margin-left:15%;
+.container-body{                                                /*Es el contenedor flex*/
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Empiezan las columnas*/
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
     letter-spacing: 1px;
+    line-height: 20px;
+    color: #C7C7C7;
+    margin-top: 20px;
 }
 
-.c-footer-son a{
-    font-size:13px;
-    color: rgba(0,0,0);
-    margin-left:15.2%;
-    margin-top:2.5%;
-    font-weight:800;
-    letter-spacing: 1px;
+.colum2{
+    max-width: 400px;
+    
 }
 
-.c-footer-son-h{
-    position:relative;
-    height:100%;
-    width:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    align-items:center;
+.colum2 h1{
+    font-size: 22px;
 }
 
-.c-footer-son-h img{
-    height:50%;
-    width:auto;
-    border-radius:100%;
-    align-self:flex-start;
-    margin-left:6%;
-    margin-top:1.5%;
+.row{                             /*Las filas del footer*/
+    margin-top: 20px;
+    display: flex;
 }
 
-.c-footer-son-h p{
-    width:74%;
-    margin-top:1%;
-    margin-bottom:0%;
-    margin-right:0;
-    height:auto;
-    font-size:13.6px;
-    font-weight:600px;
-    align-self: flex-start;
-    margin-left:10%;
-    letter-spacing: 1px;
+.row img{                       
+    width: 36px;
+    height: 36px;
 }
 
-/*Boton Raro*/
-
-.f-button{                                                          /*Se tiene que poner manualmente*/
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    position:absolute;
-    top:200.4vh;
-    left:24vw;
-    width:300px;
-    height:45px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.row label{                         /*Etiqueta del footer*/
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
 }
 
-.f-button p{
-    color: rgba(52, 56, 140,0.8);
-    font-weight:1000;
-    font-size:1vw;
-    z-index:10;
+.colum3{
+    max-width: 400px;
 }
 
-.f-button p:hover{
-    font-size:1.2vw;
-    color:#34388C;
+.colum3 h1{
+    font-size: 22px;
 }
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+/*contiene el contenido legal*/
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

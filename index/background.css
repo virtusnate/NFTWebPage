@@ -1,10 +1,3 @@
-.area{
-    background: #34388C;  
-    background: -webkit-linear-gradient(to left, #8f94fb, #34388C); 
-    width: 100%;
-    height: 107.5vh;                                                         /* El tamaño del fondo */
-}
-
 .circles{
     position: absolute;
     top: 0;
@@ -12,6 +5,7 @@
     width: 100%;
     height: 100%;                                                          /*El tamaño del contenedor */
     overflow: hidden;
+    z-index:1;
 }
 
 .circles li{
@@ -22,8 +16,7 @@
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
-    bottom: 0;                                                             /*De aqui inician las animaciones*/
-    
+    bottom: -150px;                                                             /*De aqui inician las animaciones*/
 }
 
 .circles li:nth-child(1){
@@ -110,6 +103,7 @@
     width: 100%;
     height: 100vh;                                                          /*El tamaño del contenedor */
     overflow: hidden;
+    z-index:2;
 }
 
 .circles2 li{
