@@ -85,26 +85,39 @@ body{
 
         /*Aqui acaba el contenedor de nft */
 
-        .t-title {                                      /*Texto principal*/
-            width:32vw;
-            position: absolute;
-            text-align:left;
-            display:inline-block;
+        #text-container{
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:column;
+            position:absolute;
             top:30vh;
             left:17vw;
+            width:24vw;
+        }
+
+        @media (max-width: 1080px){
+            #text-container{
+                top:16vh;
+            }
+        }
+
+        .t-title {                                      /*Texto principal*/
+            width:24vw;
+            text-align:left;
+            display:inline-block;
+            margin-right:10vw;
             font-size: 4vh;
             color:#fff;          
         }
         
         .t-subtitle {                                   /*Subtitulo Principal*/
             width:24vw;
-            position: absolute;
             display:inline-block;
-            top:42vh;
-            left:17.2vw;    
             font-size:1.8vh;   
             font-weight:800;  
             color:rgba(255, 255, 255, 0.6); 
+            margin-top:1.8vh;
+            margin-left:0.1vw;
         }
         
         /*Aqui acaba el texto de la portada */
@@ -115,10 +128,8 @@ body{
             display:grid;
             grid-template-columns:50% 50%;
             grid-template-rows:100%;
-            grid-gap:2vh;
-            position:absolute;
-            top:49vh;
-            left:17vw;
+            grid-gap:1.8vh;
+            margin-top:2.4vh;
         }
 
         .c-button-son{
@@ -157,7 +168,7 @@ body{
             grid-template-columns:60% 40%;
             position:absolute;
             right:17vw;
-            top: 80vh;
+            top: 81vh;
             overflow:hidden;
             z-index:9;
         }
