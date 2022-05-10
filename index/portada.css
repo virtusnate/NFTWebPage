@@ -93,6 +93,7 @@ body{
             top:30vh;
             left:17vw;
             width:24vw;
+            overflow:hidden;
         }
 
         @media (max-width: 1080px){
