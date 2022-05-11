@@ -87,9 +87,7 @@ font-weight:600;
 footer{                                                         /*Contiene el footer*/
     width: 100%;
     background: #202020;
-    color: white;   
-    position:absolute;
-    top:197vh;
+    color: white; 
     z-index:12;
 }
 

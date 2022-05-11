@@ -27,6 +27,8 @@ body{
     display:flex;
     align-items:center;
     flex-wrap:nowrap;
+    top:0;
+    margin-bottom: 6vh;
     z-index:30;
 }
 
