@@ -5,43 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="login.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="login-template.css">
+    <link rel="icon" href="../imagenes/logo.ico">
   </head>
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <body>
     
     <nav id="barra">
-      <img class="logo" src="logo.png">
+      <img class="logo" src="../imagenes/logo.png">
       <a href="..//index/index.html"><p>Explora</p></a>
       <a href="../store.html"><p>Mercado</p></a>
       <a href="../academia.html"><p>Aprende</p></a>
-      <a href="../empresa.html"><p>Nosotros</p></a>
       <div id="profile">
           <a class="profile" id="izquierda" href="../profile.html"><p>Mi Perfil</p></a>
           <div class="separator"></div>
@@ -49,47 +22,37 @@
           <a class="profile" href="login.html"><p>Log In</p></a>
       </div>
   </nav>
-
-<body>
-    <br>
-    <img src="foto.jpg" width="200" height="250">
-    <br>
-    <h5>Iniciar Sesión</h5>
-    <div class="container">
-      <div>
-
-        <form name="login">
-          <div>
-            <label for="Correo">Correo electrónico</label>
-            <input name="usuario" type="text" class="form-control" required>
-          </div>
-          <div class="form-group">
-            <label for="Contraseña">Contraseña</label>
-            <input name="password" type="password" required>
-          </div>
-          <div >
-            <div><button type="button" class="btn btn-primary" onclick="Login()">Ingresar</button></div>
-          </div>
-        </form>
-        
-      </div>
-    </div>
-
+  
+  <div class="login-front">
+      <img src="../imagenes/nft/4.jpg">
+      <h1>Iniciar Sesión</h1>
+          <form name="login" class="formulario">
+            <div class="son-container">
+              <label for="Correo" class="formulario-hijo">Correo electrónico</label>
+              <input name="usuario" type="text" class="form-control" required>
+            </div>
+            <div class="son-container">
+              <label for="Contraseña" class="formulario-hijo">Contraseña</label>
+              <input name="password" type="password" required>
+            </div>
+              <button type="button" class="formulario-hijo" onclick="Login()">Ingresar</button>
+          </form>
+  </div>
     <script language="JavaScript"> 
 function Login(){ 
 var done=0; 
 var usuario=document.login.usuario.value; 
 var password=document.login.password.value; 
-if (usuario=="diego@san.mx" && password=="diego123") { 
-window.location="admin.html"; 
-} else if (usuario=="ximena@san.mx" && password=="ximena123") { 
-    window.location="admin.html"; 
-    } else if (usuario=="ortega@san.mx" && password=="ortega123") { 
-        window.location="admin.html"; 
-        } else if (usuario=="hector@san.mx" && password=="hector123") { 
-            window.location="admin.html"; 
-            } else if (usuario=="paulo@san.mx" && password=="paulo123") { 
-                window.location="admin.html"; 
+if (usuario=="nathan@horizon.com" && password=="nathan123") { 
+window.location="../profile.html"; 
+} else if (usuario=="gerardo@horizon.com" && password=="gerardo123") { 
+    window.location="../profile.html"; 
+    } else if (usuario=="miguel@horizon.com" && password=="miguel123") { 
+        window.location="../profile.html"; 
+        } else if (usuario=="exceso@sambuca.com" && password=="esoo123") { 
+            window.location="../profile.html"; 
+            } else if (usuario=="vigambox@horizon.com" && password=="vigambox123") { 
+                window.location="../profile.html"; 
                 }
         else{ 
           swal("Oops!", "Por favor ingrese, nombre de usuario y contraseña correctos!", "error");
@@ -101,31 +64,116 @@ window.location="admin.html";
 document.oncontextmenu = function(){return false} 
 // End --> 
 </script>
-    
-    <footer class="site-footer" role="contentinfo">
-      <div class="container">
-        <div class="row pt-md-3 element-animate">
-          <div class="col-md-12">
-            <hr class="border-t">
-          </div>
-          <div class="col-md-6 col-sm-12 copyright">
-            <p>2022 Horizon NFT.</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-      </div>
-    </footer>
-    <!-- END footer -->
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
-</html>
+<footer>
+       
+  <div class="container-footer-all">
+   
+       <div class="container-body">
+
+           <div class="colum1">
+               <h1>Mas informacion de la compañia</h1>
+
+               <p>Horizon es una comunidad originada por artistas, programadores y usuarios en busca de
+                  una plataforma NFT donde lo importante sea el arte y no la especulación, por eso somos 
+                  la unica plataforma de trading con filtros que evitan que la tienda se sature de 
+                  contenido repetitivo generado por IA's y permite que los verdaderos artistas puedan
+                  compartir y generar ganancias de su arte.
+              </p>
+
+           </div>
+
+           <div class="colum2">
+
+               <h1>Redes Sociales</h1>
+
+               <div class="row">
+                   <img src="../index/icon/facebook.png">
+                   <label>Siguenos en Facebook</label>
+               </div>
+               <div class="row">
+                   <img src="../index/icon/twitter.png">
+                   <label>Siguenos en Twitter</label>
+               </div>
+               <div class="row">
+                   <img src="../index/icon/instagram.png">
+                   <label>Siguenos en Instagram</label>
+               </div>
+               <div class="row">
+                   <img src="../index/icon/pinterest.png">
+                   <label>Siguenos en Pinterest</label>
+               </div>
+
+
+           </div>
+
+           <div class="colum3">
+
+               <h1>Informacion Contactos</h1>
+
+               <div class="row2">
+                   <img src="../index/icon/house.png">
+                   <label> Benito Juarez,
+                  Ciudad de Mexico, México.</label>
+               </div>
+
+               <div class="row2">
+                   <img src="../index/icon/smartphone.png">
+                   <label>777-607-2399</label>
+               </div>
+
+               <div class="row2">
+                   <img src="../index/icon/contact.png">
+                    <label>support@horizon.com</label>
+               </div>
+
+           </div>
+
+       </div>
+   
+   </div>
+   
+      <div class="container-footer">
+          <div class="footer">
+               <div class="copyright">
+                   © 2017 Todos los Derechos Reservados | <a href="">Horizon</a>
+               </div>
+
+               <div class="information">
+                   <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+               </div>
+          </div>
+      </div>
+   
+</footer>
+
+
+<div class="area" >
+  <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+  </ul>
+</div >
+
+<ul class="circles">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+
+</body>
